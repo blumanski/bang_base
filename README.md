@@ -1,10 +1,10 @@
-# bang_base
+###bang_base###
 
 This is the base installation repo for my application set up.
 
 All parts of the development framework have independent respositories and get loaded via composer.
 
-Components:
+**Components:**
 
 bang_base -> Base installation
 
