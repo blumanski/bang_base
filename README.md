@@ -14,4 +14,5 @@ bang_backend_error -> Module to display application errors
 bang_content -> Module to administrate content
 
 Well, all more or less in heavy development.
+
 You should not use this.
