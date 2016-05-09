@@ -6,15 +6,51 @@
         {
             "url": "https://github.com/blumanski/bang.git",
             "type": "git"
+        },
+        {
+            "url": "https://github.com/blumanski/bang_backend_accounts.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/blumanski/bang_backend_nestedset.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/blumanski/bang_backend_dashboard.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/blumanski/bang_backend_error.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/blumanski/bang_backend_content.git",
+            "type": "git"
         }
     ],
     
     "require": {
+        "mnsami/composer-custom-directory-installer": "1.1.*",
         "blumanski/bang": "^0.0.6",
+        "blumanski/bang_backend_accounts": "^0.0.1",
+        "blumanski/bang_backend_nestedset": "^0.0.1",
+        "blumanski/bang_backend_dashboard": "^0.0.1",
+        "blumanski/bang_backend_error": "^0.0.1",
+        "blumanski/bang_backend_content": "^0.0.1",
         "swiftmailer/swiftmailer": "5.4.*@dev",
         "google/recaptcha": "~1.1",
         "aws/aws-sdk-php": "^3.17",
         "aws/aws-php-sns-message-validator": "^1.1",
         "pusher/pusher-php-server": "^2.3"
+    },
+    
+    "extra":{
+        "installer-paths":{
+          "./app/backend/modules/account": ["blumanski/bang_backend_accounts"],
+          "./app/backend/modules/directory": ["blumanski/bang_backend_nestedset"],
+          "./app/backend/modules/dashboard": ["blumanski/bang_backend_dashboard"],
+          "./app/backend/modules/error": ["blumanski/bang_backend_error"],
+          "./app/backend/modules/content": ["blumanski/bang_backend_content"]
+        }
     }
 }
