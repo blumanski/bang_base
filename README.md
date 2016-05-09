@@ -6,20 +6,13 @@ All parts of the development framework have independent respositories and get lo
 
 **Components:**
 
-bang_base -> Base installation
-
-bang -> Bang Framework Core
-
-bang_backend_account -> Backend Module to administrate user accounts
-
-bang_backend_nestedset -> Backend Module to administrate menus and tree structures
-
-bang_backend_dashboard -> Backend Module to show a dashboard
-
-bang_backend_error -> Module to display application errors
-
-bang_content -> Module to administrate content
-
+* bang_base -> Base installation
+* bang -> Bang Framework Core
+* bang_backend_account -> Backend Module to administrate user accounts
+* bang_backend_nestedset -> Backend Module to administrate menus and tree structures
+* bang_backend_dashboard -> Backend Module to show a dashboard
+* bang_backend_error -> Module to display application errors
+* bang_content -> Module to administrate content
 
 Well, all more or less in heavy development.
 
