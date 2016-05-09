@@ -16,5 +16,6 @@ All parts of the development framework have independent respositories and get lo
 
 Well, all more or less in heavy development.
 
-
 You should not use this.
+
+The only interesting file in here is the composer.json as it has examples on how to load repositories and place them into their destination directory.
