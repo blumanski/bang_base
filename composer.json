@@ -1,0 +1,20 @@
+{
+    "config": {
+        "vendor-dir": "vendor"
+    },
+     "repositories": [
+        {
+            "url": "https://github.com/blumanski/bang.git",
+            "type": "git"
+        }
+    ],
+    
+    "require": {
+        "blumanski/bang": "^0.0.6",
+        "swiftmailer/swiftmailer": "5.4.*@dev",
+        "google/recaptcha": "~1.1",
+        "aws/aws-sdk-php": "^3.17",
+        "aws/aws-php-sns-message-validator": "^1.1",
+        "pusher/pusher-php-server": "^2.3"
+    }
+}
