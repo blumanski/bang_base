@@ -1,0 +1,33 @@
+/* line 1, stdin */
+#nodeform-wrapper {
+  display: none;
+  clear: both; }
+
+/* line 5, stdin */
+#newnode {
+  display: block;
+  margin: 0 0 10px 0; }
+
+/* line 9, stdin */
+.treeroot .uk-nestable-item {
+  overflow: hidden;
+  clear: both; }
+
+/* line 12, stdin */
+.treeroot .uk-nestable-item .toolbar {
+  float: right;
+  padding: 0 6px 0 6px; }
+
+/* line 16, stdin */
+a.tree-toolbar {
+  margin: 0 8px 0 8px;
+  color: #333; }
+
+/** nestable overwrite */
+/* line 21, stdin */
+.uk-nestable-item + .uk-nestable-item {
+  margin-top: 4px !important; }
+
+/* line 24, stdin */
+.uk-nestable-list:not(.uk-nestable-dragged) > .uk-nestable-item:first-child {
+  margin-top: 4px !important; }

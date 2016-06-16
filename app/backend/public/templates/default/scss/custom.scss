@@ -1,0 +1,175 @@
+@mixin css3-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+   -khtml-#{$property}: #{$value};
+     -moz-#{$property}: #{$value};
+      -ms-#{$property}: #{$value};
+       -o-#{$property}: #{$value};
+          #{$property}: #{$value};
+}
+
+@mixin background-opacity($color: #000, $opacity: 0.85) {
+  background: $color;
+  background: rgba($color, $opacity);
+}
+
+@mixin border-radius($radius: 5px) {
+    @include css3-prefix('border-radius', $radius);
+}
+
+@mixin opacity($opacity: 0.5) {
+    $opacityMultiplied: ($opacity * 100);
+
+    filter:         alpha(opacity=$opacityMultiplied);
+    -ms-filter:     "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $opacityMultiplied + ")";
+    @include css3-prefix('opacity', $opacity);
+}
+
+.hidden {
+	display: none;
+}
+
+.leftmargin-xs {
+	margin-left: 4px;
+}
+.leftmargin {
+    margin-left: 8px;
+}
+.rightmargin-xs {
+    margin-right: 4px;
+}
+.rightmargin {
+    margin-right: 8px;
+}
+
+
+.content-level {
+	clear: both;
+	padding: 25px 0 0 0;
+}
+
+.mytruncate {
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  line-height: 12px;
+}
+
+
+.action-td {
+	width: 20px !important;
+	
+	i {
+	   font-size: 23px;
+	   color: #333;
+	}
+}
+
+h5  {
+	font-size: 1.0rem;
+}
+
+h4  {
+    font-size: 1.2rem;
+}
+
+.valerror {
+	display: block;
+	color: #aa0000;
+	font-size: 80%;
+	padding: 0px 0px 15px 0px;
+}
+
+.errorborder {
+	border-bottom: 1px solid #aa0000 !important;
+}
+
+.btn-xs {
+	font-size: 12px;
+    height: auto;
+    margin: 0;
+    padding: 1px 10px;
+    text-transform: capitalize;
+}
+
+.greenish {
+	background: #00aa00;
+	color: #fff;
+	
+	&:hover {
+	   background: #009900;
+	}
+}
+
+.warn {
+    background: #F78B1E;
+    color: #fff;
+    
+    &:hover {
+       background: #E8892A;
+    }
+}
+
+tr.user-removed {
+	background: #FAF2ED;
+	
+	td {
+	   background: #FAF2ED;
+	   color: #ccc;
+	   
+	   &.action-td i, a i, i {
+	       color: #cdcdcd !important;
+	   }
+	}
+}
+
+.action-wrapper {
+	
+	margin-top: 30px;
+}
+
+div.system-message {
+	
+	display: none;
+	
+/* 	width: 100%;
+	border: 1px solid #f8f8f8;
+	@include border-radius(5px);
+	text-align: left;
+	padding: 10px;
+	
+	&.success {
+	   background: #ECFADC;
+	   color: #333;
+	}
+	
+	&.warning {
+	   background: #FCF8EB;
+       color: #333;
+	}
+	
+	&.error {
+	   background: #FCECEB;
+       color: #333;
+	} */
+	
+}
+
+
+// overwrite data tables
+table.dataTable thead th, table.dataTable thead  {
+	border-bottom: 1px solid #dedede !important;
+}
+
+
+#confirmation-modal {
+	max-width: 350px;
+	max-height: 300px;
+}
+
+#blanko-overlay {
+	display: none;
+	z-index: 1002; 
+	opacity: 0.5;
+}
