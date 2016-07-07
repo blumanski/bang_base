@@ -31,12 +31,12 @@
     
     "require": {
         "mnsami/composer-custom-directory-installer": "1.1.*",
-        "blumanski/bang": "^0.0.6",
-        "blumanski/bang_backend_accounts": "^0.0.1",
-        "blumanski/bang_backend_nestedset": "^0.0.1",
-        "blumanski/bang_backend_dashboard": "^0.0.1",
-        "blumanski/bang_backend_error": "^0.0.1",
-        "blumanski/bang_backend_content": "^0.0.1",
+        "blumanski/bang": "@dev",
+        "blumanski/bang_backend_accounts": "@dev",
+        "blumanski/bang_backend_nestedset": "@dev",
+        "blumanski/bang_backend_dashboard": "@dev",
+        "blumanski/bang_backend_error": "@dev",
+        "blumanski/bang_backend_content": "@dev",
         "swiftmailer/swiftmailer": "5.4.*@dev",
         "google/recaptcha": "~1.1",
         "aws/aws-sdk-php": "^3.17",
